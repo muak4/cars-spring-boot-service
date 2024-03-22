@@ -1,0 +1,108 @@
+model,manufacturer,year,color,transmission,fuel_type,engine_type,horsepower,height,width,length,ground_clearance,body_type,car_type
+Corolla,Toyota,2015,Red,Manual,Petrol,V6,185,1600,1800,4400,170,Sedan,2 Wheels
+Civic,Honda,2018,Blue,Automatic,Petrol,Inline-4,174,1500,1700,4200,160,Sedan,2 Wheels
+Accord,Honda,2020,Black,Manual,Diesel,V6,198,1800,1900,4600,180,Sedan,2 Wheels
+Camry,Toyota,2012,White,Automatic,Petrol,Inline-4,203,1700,1800,4400,170,Sedan,2 Wheels
+Mustang,Ford,2019,Red,Manual,Petrol,V8,450,1600,1900,4800,190,Coupe,Sports
+Camaro,Chevrolet,2017,Blue,Automatic,Petrol,V8,455,1800,2000,4800,180,Coupe,Sports
+Challenger,Dodge,2016,Black,Manual,Petrol,V8,375,1700,1900,4600,170,Coupe,Sports
+Model 3,Tesla,2022,Black,Automatic,Electric,Electric,283,1440,1850,4694,140,Sedan,Electric
+Explorer,Ford,2022,Silver,Automatic,Petrol,V6,300,1700,1900,4600,170,SUV,All Wheels
+Tucson,Hyundai,2013,Green,Manual,Diesel,Inline-4,182,1600,1800,4400,160,SUV,All Wheels
+Civic,Honda,2011,Blue,Manual,Petrol,Inline-4,140,1500,1700,4200,150,Sedan,2 Wheels
+Mustang,Ford,2019,Black,Automatic,Petrol,V8,450,1800,1900,4800,180,Coupe,Sports
+Tucson,Hyundai,2017,Red,Automatic,Petrol,V6,260,1700,1900,4600,170,SUV,All Wheels
+Civic,Honda,2014,White,Automatic,Petrol,Inline-4,143,1500,1700,4200,160,Sedan,2 Wheels
+Explorer,Ford,2016,Blue,Manual,Diesel,V6,250,1800,2000,4800,180,SUV,All Wheels
+Camry,Toyota,2018,Red,Automatic,Petrol,Inline-4,203,1700,1800,4400,170,Sedan,2 Wheels
+Leaf,Nissan,2019,Green,Automatic,Electric,Electric,147,1550,1690,4490,150,Hatchback,Electric
+Accord,Honda,2021,Black,Manual,Diesel,V6,200,1800,1900,4600,180,Sedan,2 Wheels
+Corolla,Toyota,2013,Blue,Manual,Petrol,V6,180,1600,1800,4400,170,Sedan,2 Wheels
+F-150,Ford,2020,White,Automatic,Petrol,V8,395,1800,2000,4800,180,Truck,2 Wheels
+Challenger,Dodge,2015,Black,Automatic,Petrol,V8,372,1700,1900,4600,170,Coupe,Sports
+Tucson,Hyundai,2019,Green,Manual,Diesel,Inline-4,180,1600,1800,4400,160,SUV,All Wheels
+Civic,Honda,2016,Blue,Automatic,Petrol,Inline-4,158,1500,1700,4200,150,Sedan,2 Wheels
+Explorer,Ford,2015,Silver,Automatic,Petrol,V6,290,1800,2000,4800,180,SUV,All Wheels
+Tucson,Hyundai,2014,Green,Automatic,Petrol,V6,270,1700,1900,4600,170,SUV,All Wheels
+e-tron,Audi,2019,Blue,Automatic,Electric,Electric,402,1650,1935,4901,170,SUV,Electric
+Camaro,Chevrolet,2020,Black,Manual,Petrol,V8,455,1800,2000,4800,180,Coupe,Sports
+F-150,Ford,2017,White,Automatic,Petrol,V6,290,1800,2000,4800,180,Truck,2 Wheels
+Explorer,Ford,2019,Blue,Manual,Diesel,V6,250,1800,2000,4800,180,SUV,All Wheels
+Model S,Tesla,2018,Blue,Automatic,Electric,Electric,503,1440,1960,4970,150,Sedan,Electric
+i3,BMW,2020,White,Automatic,Electric,Electric,168,1578,1775,3999,140,Hatchback,Electric
+Bolt,Chevrolet,2017,Red,Automatic,Electric,Electric,200,1609,1765,4166,150,Hatchback,Electric
+e-tron,Audi,2021,Black,Automatic,Electric,Electric,355,1650,1935,4901,170,SUV,Electric
+Civic,Honda,2013,White,Manual,Petrol,Inline-4,150,1500,1700,4200,150,Sedan,2 Wheels
+Soul EV,Kia,2016,Gray,Automatic,Electric,Electric,109,1593,1800,4195,165,Hatchback,Electric
+F-150,Ford,2014,White,Automatic,Petrol,V6,290,1800,2000,4800,180,Truck,2 Wheels
+Ioniq EV,Hyundai,2019,Silver,Automatic,Electric,Electric,134,1478,1820,4470,160,Hatchback,Electric
+EQC,Mercedes-Benz,2020,White,Automatic,Electric,Electric,402,1624,1884,4761,150,SUV,Electric
+Mustang,Ford,2018,Red,Manual,Petrol,V8,460,1800,1900,4800,180,Coupe,Sports
+Corolla,Toyota,2016,Blue,Manual,Petrol,Inline-4,132,1476,1778,4696,157,Sedan,2 Wheels
+Civic,Honda,2019,White,Automatic,Petrol,Inline-4,158,1529,1779,4515,152,Sedan,2 Wheels
+Sonata,Hyundai,2017,Silver,Manual,Petrol,Inline-4,178,1450,1860,4910,155,Sedan,2 Wheels
+Model Y,Tesla,2021,Red,Automatic,Electric,Electric,384,1624,1873,4761,160,SUV,Electric
+Escape,Ford,2020,Black,Manual,Diesel,V6,180,1720,1848,4436,180,SUV,All Wheels
+Rav4,Toyota,2018,Gray,Automatic,Petrol,V6,203,1550,1855,4800,170,SUV,All Wheels
+Golf,Volkswagen,2015,Blue,Manual,Diesel,Inline-4,148,1469,1799,4255,150,Hatchback,2 Wheels
+Model S,Tesla,2016,Black,Automatic,Electric,Electric,532,1440,1960,4970,150,Sedan,Electric
+Rogue,Nissan,2019,White,Manual,Petrol,Inline-4,170,1680,1845,4684,165,SUV,All Wheels
+Wrangler,Jeep,2018,Green,Automatic,Petrol,V6,285,1900,1875,4238,230,SUV,All Wheels
+F-150,Ford,2015,Red,Automatic,Petrol,V8,385,1851,2029,5262,180,Truck,2 Wheels
+A4,Audi,2017,Black,Manual,Diesel,Inline-4,190,1427,2040,4939,120,Sedan,2 Wheels
+Camry,Toyota,2019,Blue,Automatic,Petrol,V6,301,1460,1839,4875,150,Sedan,2 Wheels
+Cherokee,Jeep,2018,White,Automatic,Petrol,V6,271,1676,1859,4626,210,SUV,All Wheels
+Sonata,Hyundai,2013,Gray,Manual,Petrol,Inline-4,198,1450,1860,4910,155,Sedan,2 Wheels
+e-tron,Audi,2019,White,Automatic,Electric,Electric,355,1650,1935,4901,170,SUV,Electric
+Civic,Honda,2013,Blue,Automatic,Petrol,Inline-4,140,1529,1779,4515,152,Sedan,2 Wheels
+Rogue,Nissan,2017,Black,Manual,Petrol,Inline-4,170,1680,1845,4684,165,SUV,All Wheels
+Tacoma,Toyota,2020,Red,Automatic,Petrol,V6,278,1800,1930,5395,245,Truck,2 Wheels
+Corolla,Toyota,2014,White,Manual,Petrol,Inline-4,132,1476,1778,4696,157,Sedan,2 Wheels
+F-150,Ford,2017,Blue,Manual,Petrol,V8,385,1851,2029,5262,180,Truck,2 Wheels
+Passat,Volkswagen,2020,Gray,Automatic,Petrol,V6,276,1466,1834,4767,150,Sedan,2 Wheels
+Sonata,Hyundai,2015,Blue,Automatic,Petrol,Inline-4,185,1450,1860,4910,155,Sedan,2 Wheels
+Escape,Ford,2019,Black,Manual,Diesel,V6,180,1720,1848,4436,180,SUV,All Wheels
+Cherokee,Jeep,2016,White,Manual,Petrol,V6,271,1676,1859,4626,210,SUV,All Wheels
+Wrangler,Jeep,2015,Red,Automatic,Petrol,V6,285,1900,1875,4238,230,SUV,All Wheels
+Golf,Volkswagen,2019,Blue,Manual,Diesel,Inline-4,148,1469,1799,4255,150,Hatchback,2 Wheels
+e-tron,Audi,2018,Black,Automatic,Electric,Electric,503,1650,1935,4901,170,SUV,Electric
+Tacoma,Toyota,2018,White,Automatic,Petrol,V6,278,1800,1930,5395,245,Truck,2 Wheels
+Civic,Honda,2017,Black,Automatic,Petrol,Inline-4,158,1529,1779,4515,152,Sedan,2 Wheels
+Sonata,Hyundai,2018,White,Manual,Diesel,Inline-4,178,1450,1860,4910,155,Sedan,2 Wheels
+Model X,Tesla,2020,Red,Automatic,Electric,Electric,532,1624,1999,5036,160,SUV,Electric
+Escape,Ford,2016,Blue,Manual,Diesel,V6,180,1720,1848,4436,180,SUV,All Wheels
+Rav4,Toyota,2019,Silver,Manual,Petrol,V6,203,1550,1855,4800,170,SUV,All Wheels
+Golf,Volkswagen,2017,White,Automatic,Petrol,Inline-4,170,1469,1799,4255,150,Hatchback,2 Wheels
+Model S,Tesla,2017,Blue,Automatic,Electric,Electric,503,1440,1960,4970,150,Sedan,Electric
+Rogue,Nissan,2018,Black,Manual,Petrol,Inline-4,170,1680,1845,4684,165,SUV,All Wheels
+Wrangler,Jeep,2016,Green,Automatic,Petrol,V6,285,1900,1875,4238,230,SUV,All Wheels
+F-150,Ford,2016,Red,Automatic,Petrol,V8,385,1851,2029,5262,180,Truck,2 Wheels
+A4,Audi,2019,Black,Manual,Diesel,Inline-4,190,1427,2040,4939,120,Sedan,2 Wheels
+Camry,Toyota,2015,Blue,Automatic,Petrol,V6,301,1460,1839,4875,150,Sedan,2 Wheels
+Cherokee,Jeep,2019,White,Automatic,Petrol,V6,271,1676,1859,4626,210,SUV,All Wheels
+Sonata,Hyundai,2012,Gray,Manual,Petrol,Inline-4,198,1450,1860,4910,155,Sedan,2 Wheels
+e-tron,Audi,2020,White,Automatic,Electric,Electric,355,1650,1935,4901,170,SUV,Electric
+Civic,Honda,2014,Blue,Automatic,Petrol,Inline-4,140,1529,1779,4515,152,Sedan,2 Wheels
+Rogue,Nissan,2016,Black,Manual,Petrol,Inline-4,170,1680,1845,4684,165,SUV,All Wheels
+Tacoma,Toyota,2019,Red,Automatic,Petrol,V6,278,1800,1930,5395,245,Truck,2 Wheels
+Corolla,Toyota,2015,White,Manual,Petrol,Inline-4,132,1476,1778,4696,157,Sedan,2 Wheels
+F-150,Ford,2018,Blue,Manual,Petrol,V8,385,1851,2029,5262,180,Truck,2 Wheels
+Passat,Volkswagen,2019,Gray,Automatic,Petrol,V6,276,1466,1834,4767,150,Sedan,2 Wheels
+Sonata,Hyundai,2017,Blue,Automatic,Petrol,Inline-4,185,1450,1860,4910,155,Sedan,2 Wheels
+Escape,Ford,2021,Black,Manual,Diesel,V6,180,1720,1848,4436,180,SUV,All Wheels
+Cherokee,Jeep,2017,White,Manual,Petrol,V6,271,1676,1859,4626,210,SUV,All Wheels
+Wrangler,Jeep,2019,Red,Automatic,Petrol,V6,285,1900,1875,4238,230,SUV,All Wheels
+Golf,Volkswagen,2018,Blue,Manual,Diesel,Inline-4,148,1469,1799,4255,150,Hatchback,2 Wheels
+e-tron,Audi,2017,Black,Automatic,Electric,Electric,503,1650,1935,4901,170,SUV,Electric
+Tacoma,Toyota,2020,White,Automatic,Petrol,V6,278,1800,1930,5395,245,Truck,2 Wheels
+Civic,Honda,2018,Black,Automatic,Petrol,Inline-4,158,1529,1779,4515,152,Sedan,2 Wheels
+Sonata,Hyundai,2013,Gray,Manual,Petrol,Inline-4,198,1450,1860,4910,155,Sedan,2 Wheels
+Model 3,Tesla,2019,Black,Automatic,Electric,Electric,283,1440,1850,4694,140,Sedan,Electric
+Escape,Ford,2015,Blue,Manual,Diesel,V6,180,1720,1848,4436,180,SUV,All Wheels
+Rav4,Toyota,2021,Silver,Manual,Petrol,V6,203,1550,1855,4800,170,SUV,All Wheels
+Golf,Volkswagen,2016,White,Automatic,Petrol,Inline-4,170,1469,1799,4255,150,Hatchback,2 Wheels
+Model S,Tesla,2015,Blue,Automatic,Electric,Electric,503,1440,1960,4970,150,Sedan,Electric
+Rogue,Nissan,2020,Black,Manual,Petrol,Inline-4,170,1680,1845,4684,165,SUV,All Wheels
+Wrangler,Jeep,2017,Green,Automatic,Petrol,V6,285,1900,1875,4238,230,SUV,All Wheels
+F-150,Ford,2019,Red,Automatic,Petrol,V8,385,1851,2029,5262,180,Truck,2 Wheels
+A4,Audi,2016,Black,Manual,Diesel,Inline-4,190,1427,2040,4939,120,Sedan,2 Wheels
