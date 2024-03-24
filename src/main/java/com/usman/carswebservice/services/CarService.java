@@ -5,7 +5,7 @@ import com.usman.carswebservice.repositories.CarRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
@@ -24,7 +24,7 @@ public class CarService {
     @Autowired
     private CarRepository carRepository;
 
-    public List<Car> getCars() {
+    public List<Car> getAllCars() {
         try {
             return carRepository.findAll();
         } catch (Exception e) {
@@ -44,7 +44,7 @@ public class CarService {
             Integer year,
             String fuelType,
             String carType,
-            PageRequest pageRequest
+            Pageable pageRequest
     ) {
         try {
             model = capitalizeIfNotNull(model);
