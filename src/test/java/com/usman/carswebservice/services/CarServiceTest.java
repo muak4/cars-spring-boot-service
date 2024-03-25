@@ -11,12 +11,10 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.data.domain.*;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
@@ -104,31 +102,5 @@ class CarServiceTest {
         assertEquals(ERROR_INVALID_CAR, exception.getReason());
         verify(carRepository, times(1)).findById(76L);
     }
-
-//    @Test
-//    @DisplayName("Search Cars - Success")
-//    void searchCarsSuccess() {
-//        Pageable pageRequest = PageRequest.of(0, 1, Sort.by("id"));
-////        Page<Car> page = new PageImpl<>(Collections.singletonList(cars.get(1)));
-//        Page<Car> page = new PageImpl<>(Collections.singletonList(cars.get(1)), pageRequest, 1);
-//
-//        when(carRepository.searchCars("civic", null, null, null, null, pageRequest))
-//                .thenReturn(page);
-//
-//
-//        // Call the service method
-//        Page<Car> resultPage = carService.searchCars("civic", null, null, null, null, 0, 1, "id");
-//
-//        assertNotNull(resultPage);
-//        assertEquals(cars.get(1).getId(), carPage.getContent().get(0).getId());
-//        verify(carRepository, times(1)).searchCars(
-//                "civic",
-//                null,
-//                null,
-//                null,
-//                null,
-//                pageRequest
-//        );
-//    }
 
 }

@@ -2,10 +2,13 @@ package com.usman.carswebservice.services;
 
 import com.usman.carswebservice.models.Car;
 import com.usman.carswebservice.repositories.CarRepository;
+import lombok.Generated;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
@@ -38,13 +41,16 @@ public class CarService {
         return carById.orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, ERROR_INVALID_CAR + carId));
     }
 
+    @Generated
     public Page<Car> searchCars(
             String model,
             String manufacturer,
-            Integer year,
+            Integer modelYear,
             String fuelType,
             String carType,
-            Pageable pageRequest
+            int pageNum,
+            int pageSize,
+            String sortBy
     ) {
         try {
             model = capitalizeIfNotNull(model);
@@ -52,7 +58,8 @@ public class CarService {
             fuelType = capitalizeIfNotNull(fuelType);
             carType = capitalizeIfNotNull(carType);
 
-            return carRepository.searchCars(model, manufacturer, year, fuelType, carType, pageRequest);
+            Pageable pageRequest = PageRequest.of(pageNum, pageSize, Sort.by(sortBy));
+            return carRepository.searchCars(model, manufacturer, modelYear, fuelType, carType, pageRequest);
         } catch (Exception e) {
             throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, ERROR_RETRIEVING_CARS);
         }
