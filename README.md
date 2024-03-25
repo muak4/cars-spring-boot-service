@@ -2,23 +2,22 @@
 
 Building Restful APIs with Spring Boot 3: A Practical Demonstration and Explanation
 
-- [What is the purpose of the Repository?](What is the purpose of the Repository?)
-  - [Problem Statement](#Problem-Statement)
-  - [Suggested Implementation](#Suggested-Implementation)
-  - [Assumptions](#Assumptions)
+- [Purpose of this Repository](#purpose-of-this-repository)
+  - [Problem Statement](#problem-statement)
+  - [Suggested Implementation](#suggested-implementation)
+  - [Assumptions](#assumptions)
   - [Restore Database](#restore-database)
+  - [API Security](#api-security)
   - [API Endpoints](#API-Endpoints)
 - [Set Up Guidelines](#Set-Up-Guidelines)
   - [Pre Requisite](#pre-requisite)
   - [Docker Setup](#docker-setup)
   - [Docker Setup](#local-setup)
   - [Configuration](#configuration)
-- [Contribution guidelines](#contribution-guidelines)
-- [Screenshots](#screenshots)
 
 ---
 
-## What is the purpose of the Repository?
+## Purpose of this Repository
 
 - This service is developed as an assignment for FinologyGroup. 
 - Integrated [Swagger](www.swagger.io) for comprehensive API documentation. 
@@ -42,13 +41,13 @@ Notes:
 
 ### Suggested Implementation
 
-- For the Restful API implementation, I'll use Spring Boot 3, leveraging its N-tie architecture.
+- For the Restful API implementation, I'll use Spring Boot 3, leveraging its N-tier Architecture.
 - A simple JWT authentication will be provided to make a system bit secure.
 - For Persistence, I'll be using Postgres Database.
 - Some opensource Cars related data will be used that will be inserted to our Database.
 - Dockerize Backend and Database into 2 containers for efficient Build distribution.
 - For testing, I'll be using JUnit and Mockito.
-- For API documentation and testing, Swagger will be integrated. [http://localhost/swagger-ui.html](http://localhost/swagger-ui.html)
+- For API documentation and testing, Swagger will be integrated. [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
 - To keep things simple only GET calls are added. In this iteration there is no modifying DB.
 - We will also provide paginated search response against multiple search parameters.
 
@@ -66,7 +65,13 @@ in `docker-compose.yml`. I've placed these queries under [/database/docker_postg
 
 If you want to run this application outside of docker containers. You'll have to import this file using [Dbeaver](https://dbeaver.io/) 
 or any other SQL client
- 
+
+### API Security
+
+Basic JSON Web Tokens (JWTs) are integrated for API security. As I aim to keep things simple for this assignment,
+providing an overview of security is still a good idea. To use the APIs, users must authenticate through [Swagger](http://localhost:8080/swagger-ui.html).
+For that, the user needs to enter the value of the `secret` in the `Authorize` dialog. For now, the value of the `secret` 
+is `this-is-a-secret-value`. After that, the user will be authenticated and now can access the APIs.
 
 ### API Endpoints
 
@@ -115,14 +120,4 @@ To run application on your local machine without docker you need following tools
 - To run tests `mvn clean test`
 - To run test using Jacoco `mvn clean test jacoco:report`. This will create html report in [target/site/index.html](http://localhost:63342/cars-web-service/target/site/jacoco/index.html)
 
-**When application is running, you can access API docs on [`http://localhost/swagger-ui.html`](http://localhost/swagger-ui.html)**
-
----
-
-## Contribution guidelines
-
-- Forks are always appreciated
-
----
-
-### Screenshots
+**When application is running, you can access API docs on [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)**
