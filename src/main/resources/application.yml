@@ -18,3 +18,8 @@ spring:
     show-sql: true
   main:
     web-application-type: servlet
+
+api:
+  auth:
+    header: "Authorization"
+    secret: "this-is-a-secret-value"

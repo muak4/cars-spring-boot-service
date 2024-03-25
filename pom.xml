@@ -52,6 +52,10 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -78,7 +82,7 @@
 					</dependency>
 				</dependencies>
 			</plugin>
-			<!--	Plugin for Junit Dependencies		-->
+			<!--	Plugin for Jacoco Dependencies		-->
 			<plugin>
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>

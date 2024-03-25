@@ -13,8 +13,6 @@ import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Sort;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 
@@ -114,8 +112,8 @@ class CarControllerTest {
                 null,
                 null,
                 null,
-                PageRequest.of(0, 50, Sort.by("id"))))
-                .thenReturn(page);
+                0, 50, "id")
+        ).thenReturn(page);
 
         mockMvc.perform(get("/api/cars/search")
                         .param("model", "civic")
