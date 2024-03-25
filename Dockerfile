@@ -3,7 +3,7 @@ RUN mkdir -p /workspace
 WORKDIR /workspace
 COPY pom.xml /workspace
 COPY src /workspace/src
-COPY data.csv .
+
 RUN mvn -B -f pom.xml clean package -DskipTests
 
 FROM openjdk:17-jdk-slim

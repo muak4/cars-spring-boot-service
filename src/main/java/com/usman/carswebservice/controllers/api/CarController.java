@@ -37,7 +37,7 @@ public class CarController {
     public ResponseEntity<Page<Car>> searchCar(
             @RequestParam(required = false) String model,
             @RequestParam(required = false) String manufacturer,
-            @RequestParam(required = false) Integer year,
+            @RequestParam(required = false) Integer modelYear,
             @RequestParam(required = false) String fuelType,
             @RequestParam(required = false) String carType,
             @RequestParam(defaultValue = "0") int page,
@@ -45,10 +45,9 @@ public class CarController {
             @RequestParam(defaultValue = "id") String sortBy
     ) {
         log.info("Search for all cars against Parameters");
-        Sort sort = Sort.by(sortBy);
         Pageable pageRequest = PageRequest.of(page, size, Sort.by(sortBy));
         Page<Car> cars = carService.searchCars(
-                model, manufacturer, year, fuelType, carType, pageRequest);
+                model, manufacturer, modelYear, fuelType, carType, pageRequest);
         return ResponseEntity.ok(cars);
     }
 

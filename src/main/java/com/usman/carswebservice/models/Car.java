@@ -28,8 +28,8 @@ public class Car {
     private String model;
     @Column(name = "manufacturer")
     private String manufacturer;
-    @Column(name = "year")
-    private Integer year;
+    @Column(name = "model_year")
+    private Integer modelYear;
     @Column(name = "color")
     private String color;
     @Column(name = "transmission")
@@ -40,11 +40,11 @@ public class Car {
     private String engineType;
     @Column(name = "horsepower")
     private Integer horsepower;
-    @Column(name = "height")
+    @Column(name = "height_mm")
     private Integer height;
-    @Column(name = "width")
+    @Column(name = "width_mm")
     private Integer width;
-    @Column(name = "length")
+    @Column(name = "length_mm")
     private Integer length;
     @Column(name = "ground_clearance")
     private Integer groundClearance;
@@ -52,36 +52,4 @@ public class Car {
     private String bodyType;
     @Column(name = "car_type")
     private String carType;
-
-    public Car(
-            String model,
-            String manufacturer,
-            Integer year,
-            String color,
-            String transmission,
-            String fuelType,
-            String engineType,
-            Integer horsepower,
-            Integer height,
-            Integer width,
-            Integer length,
-            Integer groundClearance,
-            String bodyType,
-            String carType
-    ) {
-        this.model = model;
-        this.manufacturer = manufacturer;
-        this.year = year;
-        this.color = color;
-        this.transmission = transmission;
-        this.fuelType = fuelType;
-        this.engineType = engineType;
-        this.horsepower = horsepower;
-        this.height = height;
-        this.width = width;
-        this.length = length;
-        this.groundClearance = groundClearance;
-        this.bodyType = bodyType;
-        this.carType = carType;
-    }
 }
