@@ -2,6 +2,7 @@
 
 Building Restful APIs with Spring Boot 3: A Practical Demonstration and Explanation
 
+- [Distributions](#distributions)
 - [Purpose of this Repository](#purpose-of-this-repository)
   - [Problem Statement](#problem-statement)
   - [Suggested Implementation](#suggested-implementation)
@@ -14,7 +15,15 @@ Building Restful APIs with Spring Boot 3: A Practical Demonstration and Explanat
   - [Docker Setup](#docker-setup)
   - [Docker Setup](#local-setup)
   - [Configuration](#configuration)
-- [Deployments](#deployments)
+
+---
+
+## Distributions
+
+- Swagger API Documentation: Deployed on [Amazon EC2 Instance](http://ec2-13-215-205-135.ap-southeast-1.compute.amazonaws.com:8080/swagger-ui.html)
+- A docker repository is created. It can be downloaded from [here](https://hub.docker.com/repository/docker/muak50/cars-web-service)
+- [Postman Collection Link](https://drive.google.com/file/d/1PSWxBnuRL7dB9B-3d6I2mbKUj3_tXVhZ/view?usp=sharing) 
+
 
 ---
 
@@ -80,7 +89,6 @@ is `this-is-a-secret-value`. After that, the user will be authenticated and now 
 - **Get** `{baseURL}/api/cars` - Fetch all cars from a database
 - **Get** `{baseURL}/api/cars/{carID}` - Retrieve only one car that matches the carID.
 - **Get** `{baseURL}/api/cars/search` - Search among all cars across various parameters and get paginated result.
-- [Postman Collection Link](https://drive.google.com/file/d/1PSWxBnuRL7dB9B-3d6I2mbKUj3_tXVhZ/view?usp=sharing) 
 
 ---
 
@@ -133,9 +141,3 @@ To run application on your local machine without docker you need following tools
 
 **When application is running, you can access API docs on [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)**
 
----
-
-## Deployments
-
-- Swagger API Documentation: Deployed on [Amazon EC2 Instance](http://ec2-13-215-205-135.ap-southeast-1.compute.amazonaws.com:8080/swagger-ui.html)
-- A docker repository is created. It can be downloaded from [here](https://hub.docker.com/repository/docker/muak50/cars-web-service). 
