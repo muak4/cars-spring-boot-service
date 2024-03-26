@@ -14,6 +14,7 @@ Building Restful APIs with Spring Boot 3: A Practical Demonstration and Explanat
   - [Docker Setup](#docker-setup)
   - [Docker Setup](#local-setup)
   - [Configuration](#configuration)
+  - [Deployments](#deployments)
 
 ---
 
@@ -106,6 +107,16 @@ To tear down:
 
 - `docker compose down --remove-orphans`
 
+### Run Docker Image From Docker hub
+
+- **[Docker Image Repository](https://hub.docker.com/repository/docker/muak50/cars-web-service)**
+- Run `docker run -d --name cars-web-service -p 8080:8080 muak50/cars-web-service`
+- You may access the running docker app on [`http://localhost:8080/swagger-ui.html`](http://localhost:8080/swagger-ui.html)
+
+##### Stop Docker Container
+
+- Run `docker kill {container-id}`
+
 ### Local Setup
 
 To run application on your local machine without docker you need following tools
@@ -121,3 +132,8 @@ To run application on your local machine without docker you need following tools
 - To run test using Jacoco `mvn clean test jacoco:report`. This will create html report in [target/site/index.html](http://localhost:63342/cars-web-service/target/site/jacoco/index.html)
 
 **When application is running, you can access API docs on [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)**
+
+### Deployments
+
+- Swagger API Documentation: Deployed on [Amazon EC2 Instance](http://ec2-13-215-205-135.ap-southeast-1.compute.amazonaws.com:8080/swagger-ui.html)
+- A docker repository is created. It can be downloaded from [here](https://hub.docker.com/repository/docker/muak50/cars-web-service). 
